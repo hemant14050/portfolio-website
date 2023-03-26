@@ -161,7 +161,7 @@ li.temp-active, li.active a {
 /* hero section starts */
 #hero-section {
     width: 100%;
-    min-height: 100vh;
+    min-height: 820px;
     background-color: #F6F6F6;
 }
 
@@ -256,12 +256,14 @@ a {
     background-color:#202020; 
     text-align: center;
     border-radius: 50%;
-    transition: all 0.5s;
+    transition: all 0.1s;
     cursor: pointer;
+    font-size: 25px;
+    z-index: 2;
 }
 
 .social-icons > i {
-    scale: 1.5;
+    scale: 1.01;
 }
 
 .social-container .linkedin:hover {
@@ -313,10 +315,8 @@ a {
     -moz-box-shadow: 0px 2px 30px 0px #7d640d;
     z-index: 1;
     cursor: pointer;
+    font-size: 110px;
 } 
-.avatar i {
-    scale: 10;
-}
 
 /* for particle js */
 #particles-js{
@@ -340,22 +340,22 @@ a {
     
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 650px) {
     
     .hero {
         padding: 30% 1.5rem 0 1.5rem;
     }
 
     .heading1 {
-        font-size: 50px;
+        font-size: 40px;
     }
     
     .iam{
-        font-size: 28px;
+        font-size: 25px;
     }
     
     .para-text {
-        font-size: 17px;
+        font-size: 15px;
     }
     
 }
@@ -367,7 +367,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 820px;
     /* padding: 118px 0 118px 0; */
     gap: 40px;
     color: #464545;
@@ -455,13 +455,13 @@ a {
 
 @media only screen and (max-width: 800px) {
     .aboutme-content .img-text img {
-        height: 300px;
+        height: 240px;
     }
 }
 
 @media only screen and (max-width: 550px) {
     .aboutme-content .img-text {
-        font-size: 16px;
+        font-size: 15px;
     }
     .aboutme-content .img-text {
         gap: 2rem;
@@ -475,7 +475,7 @@ a {
 
 /* skills sections starts  */
 #skills {
-    min-height: 80vh;
+    min-height: 620px;
     background-color: #F6F6F6;
     display: flex;
     flex-direction: column;
@@ -608,11 +608,11 @@ a {
 
 @media only screen and (max-width: 550px){
     .skills-heading {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .tech-skills {
-        font-size: 16px;
+        font-size: 15px;
     }
     .skills-content {
         gap: 50px;
@@ -623,7 +623,7 @@ a {
 
 /* qualifications section starts */
 #qualifications {
-    min-height: 100vh;
+    min-height: 620px;
     /* display: flex;
     align-items: center;
     justify-content: center; */
