@@ -163,10 +163,14 @@ li.temp-active, li.active a {
     width: 100%;
     min-height: 820px;
     background-color: #F6F6F6;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .hero {
-    padding: 15% 1.5rem 0 1.5rem;
+    padding: 1.5rem;
+    padding-top: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -221,7 +225,7 @@ li.temp-active, li.active a {
     top: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     width: 0;
     height: 100%;
     background: #3310b4;
@@ -263,7 +267,8 @@ a {
 }
 
 .social-icons > i {
-    scale: 1.01;
+    font-size: 25px;
+    z-index: 2;
 }
 
 .social-container .linkedin:hover {
@@ -313,7 +318,7 @@ a {
     box-shadow: 0px 2px 30px 0px #7d640d; 
     -webkit-box-shadow: 0px 2px 30px 0px #7d640d; 
     -moz-box-shadow: 0px 2px 30px 0px #7d640d;
-    z-index: 1;
+    z-index: 2;
     cursor: pointer;
     font-size: 110px;
 } 
@@ -332,19 +337,17 @@ a {
 @media only screen and (max-width: 950px) {
     .hero {
         flex-direction: column;
+        gap: 40px;
     }
 
     .avatar {
-        scale: 0.6;
+        width: 300px;
+        height: 300px;
     }
     
 }
 
 @media only screen and (max-width: 650px) {
-    
-    .hero {
-        padding: 30% 1.5rem 0 1.5rem;
-    }
 
     .heading1 {
         font-size: 38px;
@@ -371,7 +374,7 @@ a {
     /* padding: 118px 0 118px 0; */
     gap: 40px;
     color: #464545;
-    padding: 50px 1.5rem 50px 1.5rem;
+    padding: 1rem;
 }
 
 .headi {
@@ -459,7 +462,7 @@ a {
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
     .aboutme-content .img-text {
         font-size: 14px;
     }
@@ -475,22 +478,22 @@ a {
 
 /* skills sections starts  */
 #skills {
-    min-height: 620px;
     background-color: #F6F6F6;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .skills-content {
     max-width: 1024px;
-    padding: 60px 1.5rem 60px 1.5rem;
+    padding: 1.5rem;
+    padding-top: 70px;
+    padding-bottom: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 60px;
 }
 .skills-text-p {
     display: flex;
@@ -577,6 +580,7 @@ a {
     justify-content: center;
     gap: 15px;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .sk-text-logo {
@@ -602,7 +606,7 @@ a {
     }
 
     .skills-content {
-        gap: 70px;
+        gap: 50px;
     }
 }
 
@@ -624,9 +628,19 @@ a {
 /* qualifications section starts */
 #qualifications {
     min-height: 620px;
-    /* display: flex;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center; */
+}
+
+.my-qualifications {
+    max-width: 1024px;
+    padding: 1.5rem;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* qualifications section ends */
 
