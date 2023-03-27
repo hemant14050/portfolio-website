@@ -1,4 +1,8 @@
 
+document.addEventListener("contextmenu", (event) => {
+    event.preventDefault();
+});
+
 const homeBtn = document.querySelector("#home-btn");
 const aboutBtn = document.querySelector("#about-btn");
 const skillsBtn = document.querySelector("#skills-btn");
