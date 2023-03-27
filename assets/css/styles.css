@@ -320,7 +320,7 @@ a {
 
 /* for particle js */
 #particles-js{
-    min-height: 820px;
+    height: 100%;
     width: 100%;
     background-image: url('');
     background-size: cover;
