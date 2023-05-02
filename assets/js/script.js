@@ -11,6 +11,7 @@ const workBtn = document.querySelector("#work-btn");
 const expBtn = document.querySelector("#exp-btn");
 const contactBtn = document.querySelector("#contact-btn");
 
+
 const navButtons = [homeBtn, aboutBtn, skillsBtn, eduBtn, workBtn, expBtn, contactBtn];
 for(let i=0; i<navButtons.length; i++) {
     navButtons[i].addEventListener("click",() => {
@@ -40,6 +41,8 @@ for(let i=0; i<navButtons.length; i++) {
 const dataLang = document.querySelector("[data-lang]");
 const dataLibra = document.querySelector("[data-libra]");
 const dataTool = document.querySelector("[data-tool]");
+const dataWork = document.querySelector("[dataWork]");
+
 
 dataLang.addEventListener("click", ()=> {
     const angleDown = document.querySelector(".sk-angle-down-lang");
@@ -75,5 +78,23 @@ dataTool.addEventListener("click", ()=> {
         document.querySelector(".sk-angle-up-tool").classList.remove("angleActive");
         angleDown.classList.add("angleActive");
         document.querySelector(".sk-tool").classList.remove("show-skill");
+    }
+});
+
+dataEdu.addEventListener("click", ()=> {
+    if(!dataEdu.classList.contains("activeBtn")) {
+        dataWork.classList.remove("activeBtn");
+        dataEdu.classList.add("activeBtn"); 
+    } else {
+
+    }
+});
+
+dataWork.addEventListener("click", ()=> {
+    if(!dataWork.classList.contains("activeBtn")) {
+        dataEdu.classList.remove("activeBtn");
+        dataWork.classList.add("activeBtn"); 
+    } else {
+        
     }
 });
