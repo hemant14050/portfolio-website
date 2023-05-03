@@ -41,8 +41,10 @@ for(let i=0; i<navButtons.length; i++) {
 const dataLang = document.querySelector("[data-lang]");
 const dataLibra = document.querySelector("[data-libra]");
 const dataTool = document.querySelector("[data-tool]");
-const dataWork = document.querySelector("[dataWork]");
-
+const dataWork = document.querySelector("[data-work]");
+const dataEdu = document.querySelector("[data-edu]");
+const education = document.querySelector("#education");
+const work = document.querySelector("#work");
 
 dataLang.addEventListener("click", ()=> {
     const angleDown = document.querySelector(".sk-angle-down-lang");
@@ -68,6 +70,7 @@ dataLibra.addEventListener("click", ()=> {
         document.querySelector(".sk-libra").classList.remove("show-skill");
     }
 });
+
 dataTool.addEventListener("click", ()=> {
     const angleDown = document.querySelector(".sk-angle-down-tool");
     if(angleDown.classList.contains("angleActive")){
@@ -85,16 +88,20 @@ dataEdu.addEventListener("click", ()=> {
     if(!dataEdu.classList.contains("activeBtn")) {
         dataWork.classList.remove("activeBtn");
         dataEdu.classList.add("activeBtn"); 
-    } else {
-
-    }
+        work.classList.remove("visible");
+        work.classList.add("noVisible");
+        education.classList.remove("noVisible");
+        education.classList.add("visible");
+    } 
 });
 
 dataWork.addEventListener("click", ()=> {
     if(!dataWork.classList.contains("activeBtn")) {
         dataEdu.classList.remove("activeBtn");
         dataWork.classList.add("activeBtn"); 
-    } else {
-        
+        education.classList.remove("visible");
+        education.classList.add("noVisible");
+        work.classList.remove("noVisible");
+        work.classList.add("visible");
     }
 });

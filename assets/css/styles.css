@@ -651,7 +651,7 @@ a {
   font-size: 20px;
   cursor: pointer;
   padding: 2px;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .activeBtn {
@@ -709,6 +709,13 @@ a {
   gap: 10px;
 }
 
+.visible {
+  display:grid;
+}
+
+.noVisible {
+  display: none;
+}
 
 @media only screen and (max-width: 550px) {
   .education {
@@ -722,10 +729,6 @@ a {
   .my-qualifications {
     max-width: 450px;
   }
-}
-
-.noVisible {
-  display: none;
 }
 
 /* qualifications section ends */
